@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor_texto: #0e0f10;
+  --cor_secundaria: #3400b0;
+  --cor_footer: #1e1e1e;
+}
+
+* {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+/*Mobile*/
+
+#inicioID {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_header img {
+  margin: 20px 0;
+}
+
+.nav_cabecalho ul {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 3.125rem;
+}
+
+.nav_cabecalho ul li a {
+  color: var(--cor_texto);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.container_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo_destaque {
+  color: var(--cor_secundaria);
+}
+
+.conteudo_inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_inicio h1,
+p {
+  padding-bottom: 0.625rem;
+}
+
+.btn {
+  padding-top: 0.625rem;
+}
+
+.btn button {
+  background-color: var(--cor_secundaria);
+  border-radius: 70px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn button a {
+  color: #fff;
+  font-size: 15px;
+}
+
+.imagem_principal img {
+  height: 80%;
+  width: 80%;
+}
+
+.slogan {
+  margin-bottom: 3.125rem;
+}
+
+.cards {
+  margin-bottom: 70px;
+}
+
+.card {
+  background-color: var(--cor_secundaria);
+  color: #fff;
+  margin-bottom: 0.938rem;
+  border-radius: 20px;
+  padding: 0.625rem;
+}
+
+.card img {
+  background-color: #e2d5ff;
+  border-radius: 50px;
+  padding: 0.25rem;
+}
+
+#sobreID {
+  background-color: var(--cor_secundaria);
+  color: #fff;
+  width: 100%;
+  margin: 0;
+}
+
+#orcamentoID {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image_orcamento img {
+  display: none;
+}
+
+.container_orcamento {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0;
+  background-color: #f1ebff;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.conteudo_orcamento {
+  text-align: left;
+}
+
+.conteudo_orcamento img {
+  background-color: var(--cor_secundaria);
+  border-radius: 50px;
+  height: 60px;
+  padding: 10px;
+}
+
+.conteudo_orcamento h3 {
+  color: var(--cor_secundaria);
+  margin: 10px 0;
+}
+
+.btn_orcamento {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn_orcamento a {
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--cor_footer);
+  width: 100%;
+}
+
+.container_footer {
+  color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer_legacy {
+  display: none;
+}
+
+.container_footer h4 {
+  margin: 10px 0;
+}
+
+.container_footer a {
+  color: #fff;
+}
+
+.ul_nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.ul_contato li {
+  padding-bottom: 10px;
+}
+
+.footer_duvida {
+  margin: 20px 0;
+}
+
+.imagem_footer img {
+  height: 50%;
+  width: 50%;
+}
+
+/*Tablet*/
+
+@media (min-width: 700px) and (max-width: 850px) {
+  .imagem_footer img {
+    height: 25%;
+    width: 20%;
+  }
+}
+
+/*Desktop*/
+
+/*Telas menores*/
+
+@media (min-width: 900px) {
+  .container_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .image_header img {
+    width: 40%;
+    margin-left: 40px;
+  }
+
+  .nav_cabecalho {
+    margin: 0;
+  }
+
+  .nav_cabecalho ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .nav_cabecalho ul li a {
+    font-size: 11px;
+  }
+
+  .nav_cabecalho ul li a:hover {
+    border-bottom: solid 2px var(--cor_secundaria);
+  }
+
+  .conteudo_inicio h1 {
+    font-size: 20px;
+  }
+
+  .conteudo_inicio p {
+    font-size: 12px;
+    width: 70%;
+  }
+
+  .btn {
+    padding-top: 0.825rem;
+  }
+
+  .btn button {
+    padding: 0.325rem;
+  }
+
+  .btn button a {
+    font-size: 12px;
+  }
+
+  .btn button:hover {
+    background-color: #2e0296;
+  }
+
+  .imagem_principal img {
+    height: 60%;
+    width: 50%;
+  }
+
+  .slogan {
+    font-size: 12px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  .card {
+    text-align: left;
+    line-height: 20px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card img {
+    padding: 0.12rem;
+    width: 13%;
+    margin-bottom: 5px;
+  }
+
+  .texto_sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto_sobre h2 {
+    margin: 10px 0;
+  }
+
+  .texto_sobre p {
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .image_sobre img {
+    width: 17%;
+  }
+
+  #orcamentoID {
+    width: 80%;
+  }
+
+  .container_orcamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image_orcamento img {
+    display: block;
+    width: 80%;
+    padding-left: 50px;
+  }
+
+  .conteudo_orcamento img {
+    width: 10%;
+    height: 8%;
+    padding: 5px;
+  }
+
+  .conteudo_orcamento h3 {
+    font-size: 18px;
+  }
+
+  .conteudo_orcamento p {
+    font-size: 12px;
+  }
+
+  .btn_orcamento {
+    font-size: 12px;
+  }
+
+  .btn_orcamento img {
+    width: 8%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn_orcamento a:hover {
+    margin-right: 8px;
+    transition: 0.3s;
+  }
+
+  .container_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .footer_legacy {
+    display: block;
+  }
+
+  .container_footer h4 {
+    font-size: 10px;
+  }
+
+  .container_footer li {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  .footer_duvida {
+    text-align: left;
+  }
+
+  .imagem_footer img {
+    margin-top: 20px;
+    height: 55%;
+    width: 50%;
+  }
+}
+
+/*FullHD*/
+@media (min-width: 1024px) {
+  .container_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .nav_cabecalho {
+    margin: 0 !important;
+  }
+
+  .nav_cabecalho ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conteudo_inicio h1 {
+    font-size: 29px;
+  }
+
+  .conteudo_inicio p {
+    line-height: 20px;
+  }
+}
